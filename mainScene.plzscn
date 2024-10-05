@@ -12,20 +12,57 @@
                     "prefabUuid": 14829735431805717965,
                     "equivalentPrefabUuid": 14829735431805717965,
                     "childrenUuid": [
-                        979300326543443043
+                        6070806897694951879,
+                        16109084272897881553,
+                        12052012834266549059
                     ],
                     "name": "Scene"
                 }
             },
             {
-                "key": 979300326543443043,
+                "key": 12052012834266549059,
                 "value": {
-                    "uuid": 979300326543443043,
+                    "uuid": 12052012834266549059,
+                    "parentUuid": 12952473987397724,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "StartGui"
+                }
+            },
+            {
+                "key": 6070806897694951879,
+                "value": {
+                    "uuid": 6070806897694951879,
                     "parentUuid": 12952473987397724,
                     "prefabUuid": 14829735431805717965,
                     "equivalentPrefabUuid": 14829735431805717965,
                     "childrenUuid": [],
                     "name": "Cube"
+                }
+            },
+            {
+                "key": 16109084272897881553,
+                "value": {
+                    "uuid": 16109084272897881553,
+                    "parentUuid": 12952473987397724,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [
+                        15515583353259218696
+                    ],
+                    "name": "Body"
+                }
+            },
+            {
+                "key": 15515583353259218696,
+                "value": {
+                    "uuid": 15515583353259218696,
+                    "parentUuid": 16109084272897881553,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "CameraEntity"
                 }
             }
         ],
@@ -56,10 +93,10 @@
                 }
             },
             {
-                "key": 979300326543443043,
+                "key": 12052012834266549059,
                 "value": {
                     "value0": {
-                        "mUuid": 979300326543443043,
+                        "mUuid": 12052012834266549059,
                         "mEnabled": true
                     },
                     "relativePosition": {
@@ -79,15 +116,135 @@
                         "value2": 1.0
                     }
                 }
-            }
-        ],
-        "cameraComponents": [],
-        "meshRendererComponents": [
+            },
             {
-                "key": 979300326543443043,
+                "key": 6070806897694951879,
                 "value": {
                     "value0": {
-                        "mUuid": 979300326543443043,
+                        "mUuid": 6070806897694951879,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": -2.316366195678711,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 256.0,
+                        "value1": 1.0,
+                        "value2": 256.0
+                    }
+                }
+            },
+            {
+                "key": 16109084272897881553,
+                "value": {
+                    "value0": {
+                        "mUuid": 16109084272897881553,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 15515583353259218696,
+                "value": {
+                    "value0": {
+                        "mUuid": 15515583353259218696,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.5,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            }
+        ],
+        "cameraComponents": [
+            {
+                "key": 15515583353259218696,
+                "value": {
+                    "value0": {
+                        "mUuid": 15515583353259218696,
+                        "mEnabled": true
+                    },
+                    "isEditorCamera": false,
+                    "Position": {
+                        "value0": 0.0,
+                        "value1": 0.5,
+                        "value2": 0.0
+                    },
+                    "Front": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 1.0
+                    },
+                    "Up": {
+                        "value0": 0.0,
+                        "value1": 1.0,
+                        "value2": 0.0
+                    },
+                    "Right": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "WorldUp": {
+                        "value0": 0.0,
+                        "value1": 1.0,
+                        "value2": 0.0
+                    },
+                    "Yaw": -90.0,
+                    "Pitch": 0.0,
+                    "MovementSpeed": 2.5,
+                    "MovementSpeedTemporaryBoost": -431602080.0,
+                    "MouseSensitivity": 0.10000000149011612,
+                    "Zoom": 60.0,
+                    "nearPlane": 0.009999999776482582,
+                    "farPlane": 15000.0,
+                    "aspectRatio": 1.0
+                }
+            }
+        ],
+        "meshRendererComponents": [
+            {
+                "key": 6070806897694951879,
+                "value": {
+                    "value0": {
+                        "mUuid": 6070806897694951879,
                         "mEnabled": true
                     },
                     "castShadows": true,
@@ -98,13 +255,36 @@
                 }
             }
         ],
-        "rigidBodyComponents": [],
-        "colliderComponents": [
+        "rigidBodyComponents": [
             {
-                "key": 979300326543443043,
+                "key": 16109084272897881553,
                 "value": {
                     "value0": {
-                        "mUuid": 979300326543443043,
+                        "mUuid": 16109084272897881553,
+                        "mEnabled": true
+                    },
+                    "kinematic": false,
+                    "dynamic": true,
+                    "continuousDetection": true,
+                    "mStaticFriction": 0.0,
+                    "mDynamicFriction": 1.0,
+                    "mRestitution": 0.5,
+                    "density": 50.0,
+                    "gravity": {
+                        "value0": 0.0,
+                        "value1": -9.8100004196167,
+                        "value2": 0.0
+                    },
+                    "rigidDynamicLockFlagsInt": 56
+                }
+            }
+        ],
+        "colliderComponents": [
+            {
+                "key": 6070806897694951879,
+                "value": {
+                    "value0": {
+                        "mUuid": 6070806897694951879,
                         "mEnabled": true
                     },
                     "value1": false,
@@ -114,6 +294,27 @@
                                 "id": 2147483649,
                                 "data": {
                                     "mEnum": 0,
+                                    "mMeshUuid": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "key": 16109084272897881553,
+                "value": {
+                    "value0": {
+                        "mUuid": 16109084272897881553,
+                        "mEnabled": true
+                    },
+                    "value1": false,
+                    "value2": [
+                        {
+                            "ptr_wrapper": {
+                                "id": 2147483650,
+                                "data": {
+                                    "mEnum": 2,
                                     "mMeshUuid": 0
                                 }
                             }
