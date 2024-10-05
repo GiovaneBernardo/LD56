@@ -25,12 +25,7 @@ public class PlayerScript : Entity
     public bool AirJumpAvailable = true;
     public int JumpCount = 2;
     public DateTime LastJumpTime;
-
-    public Transform Box1Transform = null;
-    public Transform Box2Transform = null;
-
-    public static List<UInt64> _ButtonsUuids = new List<UInt64>();
-    public static List<UInt64> _ActiveButtons = new List<UInt64>();
+    public bool GamePaused = true;
 
     public int CurrentDimension = 1;
     public void OnStart()
@@ -43,12 +38,6 @@ public class PlayerScript : Entity
         AirMultiplier = 1.1f;
         JumpHeight = 20.0f;
         JumpForce = 850.0f;
-
-        _ButtonsUuids.Add(FindEntityByName("Button1").Uuid);
-        _ButtonsUuids.Add(FindEntityByName("Button2").Uuid);
-
-        Box1Transform = FindEntityByName("Box1").GetComponent<Transform>();
-        Box2Transform = FindEntityByName("Box2").GetComponent<Transform>();
 
         FindEntityByName("StartGui").GetComponent<GuiComponent>().Enabled = true;
 
@@ -73,6 +62,7 @@ public class PlayerScript : Entity
 
     public void StartGameCallback()
     {
+        GamePaused = false;
         FindEntityByName("StartGui").GetComponent<GuiComponent>().Enabled = false;
     }
 
@@ -85,50 +75,17 @@ public class PlayerScript : Entity
 
     public void OnUpdate()
     {
-        MovePlayer();
-        RotateCamera();
-        SpeedControl();
-
         if (Input.IsKeyDown(KeyCode.Escape))
         {
+            GamePaused = true;
             FindEntityByName("StartGui").GetComponent<GuiComponent>().Enabled = true;
         }
 
-        if (LastFrameEWasPressed && Input.IsKeyReleased(KeyCode.E))
+        if (!GamePaused)
         {
-            FindEntityByName("Box" + CurrentDimension).GetComponent<MeshRenderer>().Enabled = true;//!FindEntityByName("Box" + CurrentDimension).GetComponent<MeshRenderer>().Enabled;
-            CurrentDimension = CurrentDimension == 1 ? 2 : 1;
-            FindEntityByName("Box" + CurrentDimension).GetComponent<MeshRenderer>().Enabled = false;//!FindEntityByName("Box" + CurrentDimension).GetComponent<MeshRenderer>().Enabled;
-        }
-
-        if (Input.IsKeyDown(KeyCode.E))
-        {
-            LastFrameEWasPressed = true;
-        }
-        else
-            LastFrameEWasPressed = false;
-
-        HandleMagnet();
-    }
-
-    public void HandleMagnet()
-    {
-        Entity target = FindEntityByName("Box" + CurrentDimension);
-        Vector3 targetPosition = target.GetComponent<Transform>().Translation;
-        Vector3 bodyPosition = this.GetComponent<Transform>().Translation;
-        float distance = Vector3.Distance(targetPosition, bodyPosition);
-        if (distance > 1.5f && distance < 15.0f)
-        {
-            if (Input.IsMouseDown(0))
-            {
-                FindEntityByName("Box1").GetComponent<RigidBody>().AddForce(Vector3.Normalize(Box1Transform.Translation - bodyPosition) * -1.0f * 1000.0f);
-                FindEntityByName("Box2").GetComponent<RigidBody>().AddForce(Vector3.Normalize(Box2Transform.Translation - bodyPosition) * 1000.0f);
-            }
-            else if (Input.IsMouseDown(1))
-            {
-                FindEntityByName("Box1").GetComponent<RigidBody>().AddForce(Vector3.Normalize(Box1Transform.Translation - bodyPosition) * 1000.0f);
-                FindEntityByName("Box2").GetComponent<RigidBody>().AddForce(Vector3.Normalize(Box2Transform.Translation - bodyPosition) * -1.0f * 1000.0f);
-            }
+            MovePlayer();
+            RotateCamera();
+            SpeedControl();
         }
     }
 

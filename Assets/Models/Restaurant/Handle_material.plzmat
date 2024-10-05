@@ -1,0 +1,106 @@
+{
+    "value0": {
+        "mAssetUuid": 13811451700880392451,
+        "mAssetName": "Handle_material",
+        "diffuse": {
+            "polymorphic_id": 1073741824,
+            "ptr_wrapper": {
+                "id": 2147483649,
+                "data": {
+                    "mAssetUuid": 0,
+                    "rgba": {
+                        "value0": 0.578000009059906,
+                        "value1": 0.5550000071525574,
+                        "value2": 0.7360000014305115,
+                        "value3": 1.0
+                    },
+                    "mIntensity": 1.0
+                }
+            }
+        },
+        "normal": {
+            "polymorphic_id": 1073741824,
+            "ptr_wrapper": {
+                "id": 2147483650,
+                "data": {
+                    "mAssetUuid": 0,
+                    "rgba": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "mIntensity": 1.0
+                }
+            }
+        },
+        "metalness": {
+            "polymorphic_id": 1073741824,
+            "ptr_wrapper": {
+                "id": 2147483651,
+                "data": {
+                    "mAssetUuid": 0,
+                    "rgba": {
+                        "value0": 0.578000009059906,
+                        "value1": 0.5550000071525574,
+                        "value2": 0.7360000014305115,
+                        "value3": 1.0
+                    },
+                    "mIntensity": 1.0
+                }
+            }
+        },
+        "roughness": {
+            "polymorphic_id": 1073741824,
+            "ptr_wrapper": {
+                "id": 2147483652,
+                "data": {
+                    "mAssetUuid": 0,
+                    "rgba": {
+                        "value0": 0.578000009059906,
+                        "value1": 0.5550000071525574,
+                        "value2": 0.7360000014305115,
+                        "value3": 1.0
+                    },
+                    "mIntensity": 1.0
+                }
+            }
+        },
+        "height": {
+            "polymorphic_id": 1073741824,
+            "ptr_wrapper": {
+                "id": 2147483653,
+                "data": {
+                    "mAssetUuid": 0,
+                    "rgba": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0,
+                        "value3": 1.0
+                    },
+                    "mIntensity": 1.0
+                }
+            }
+        },
+        "aoMap": {
+            "polymorphic_id": 1073741824,
+            "ptr_wrapper": {
+                "id": 2147483654,
+                "data": {
+                    "mAssetUuid": 0,
+                    "rgba": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0,
+                        "value3": 1.0
+                    },
+                    "mIntensity": 1.0
+                }
+            }
+        },
+        "flip": {
+            "value0": 1.0,
+            "value1": 1.0
+        }
+    }
+}
