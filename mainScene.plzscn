@@ -1,0 +1,134 @@
+{
+    "value0": {
+        "mAssetUuid": 18010491512651056164,
+        "mAssetName": "mainScene.plzscn",
+        "mainSceneEntityUuid": 12952473987397724,
+        "entities": [
+            {
+                "key": 12952473987397724,
+                "value": {
+                    "uuid": 12952473987397724,
+                    "parentUuid": 14829735431805717965,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [
+                        979300326543443043
+                    ],
+                    "name": "Scene"
+                }
+            },
+            {
+                "key": 979300326543443043,
+                "value": {
+                    "uuid": 979300326543443043,
+                    "parentUuid": 12952473987397724,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "Cube"
+                }
+            }
+        ],
+        "transformComponents": [
+            {
+                "key": 12952473987397724,
+                "value": {
+                    "value0": {
+                        "mUuid": 12952473987397724,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 979300326543443043,
+                "value": {
+                    "value0": {
+                        "mUuid": 979300326543443043,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            }
+        ],
+        "cameraComponents": [],
+        "meshRendererComponents": [
+            {
+                "key": 979300326543443043,
+                "value": {
+                    "value0": {
+                        "mUuid": 979300326543443043,
+                        "mEnabled": true
+                    },
+                    "castShadows": true,
+                    "mMeshUuid": 1,
+                    "mMaterialsUuids": [
+                        0
+                    ]
+                }
+            }
+        ],
+        "rigidBodyComponents": [],
+        "colliderComponents": [
+            {
+                "key": 979300326543443043,
+                "value": {
+                    "value0": {
+                        "mUuid": 979300326543443043,
+                        "mEnabled": true
+                    },
+                    "value1": false,
+                    "value2": [
+                        {
+                            "ptr_wrapper": {
+                                "id": 2147483649,
+                                "data": {
+                                    "mEnum": 0,
+                                    "mMeshUuid": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "csScriptComponents": [],
+        "UITextRendererComponents": [],
+        "audioSourceComponents": [],
+        "audioListenerComponents": [],
+        "lightComponents": [],
+        "characterControllerComponents": [],
+        "animationComponentComponents": [],
+        "guiComponents": []
+    }
+}
