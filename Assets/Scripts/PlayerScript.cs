@@ -26,8 +26,44 @@ public class PlayerScript : Entity
     public int JumpCount = 2;
     public DateTime LastJumpTime;
     public bool GamePaused = true;
+    float TableHeight = 0.0f;
+    List<Vector3> TablePositions = new List<Vector3>();
 
     public int CurrentDimension = 1;
+
+    public void SpawnTables()
+    {
+        Entity table = FindEntityByName("InstantiableTable");
+        foreach (Vector3 position in TablePositions)
+        {
+            Entity newInstance = Instantiate(table);
+            newInstance.GetComponent<Transform>().Translation = position;
+        }
+    }
+
+    void SpawnCreatures()
+    {
+        Random rnd = new Random();
+        List<int> alreadyGeneratedNumbers = new List<int>();
+        for (int i = 0; i < 3; ++i)
+        {
+            Entity newCreature = Instantiate(FindEntityByName("InstantiableCreature1"));
+            int number = rnd.Next(0, 18);
+            while(alreadyGeneratedNumbers.Contains(number))
+                number = rnd.Next(0, 18);
+
+            alreadyGeneratedNumbers.Add(number);
+            newCreature.GetComponent<Transform>().Translation = new Vector3(TablePositions[number].X, 1.0f, TablePositions[number].Z);
+        }
+    }
+
+    void SpawnDirt()
+    {
+        int tableNumber = 5;
+        Entity newDirt = Instantiate(FindEntityByName("InstantiableDirt"));
+        newDirt.GetComponent<Transform>().Translation = new Vector3(TablePositions[tableNumber].X, 1.01f, TablePositions[tableNumber].Z);
+    }
+
     public void OnStart()
     {
         //Cursor.Hide();
@@ -49,6 +85,24 @@ public class PlayerScript : Entity
         FindEntityByName("StartGui").GetComponent<GuiComponent>().FindGuiByName<GuiButton>("CloseButton").Text = "Close";
         FindEntityByName("StartGui").GetComponent<GuiComponent>().FindGuiByName<GuiButton>("CloseButton").LocalPosition = new Vector2(Screen.Size.X / 2.0f - 55.0f, Screen.Size.Y / 2.0f + 48.0f);
         FindEntityByName("StartGui").GetComponent<GuiComponent>().FindGuiByName<GuiButton>("CloseButton").AddCallback(this.Uuid, "CloseGameCallback");
+
+        for (int i = 0; i < 3; ++i)
+        {
+            for (int j = 0; j < 6; ++j)
+            {
+                TablePositions.Add(new Vector3(18.0f + 6 * i, TableHeight, 32.0f + 6 * j));
+            }
+        }
+
+        SpawnTables();
+        SpawnCreatures();
+
+        //for(uint i = 0; i < 2; ++i)
+        //{
+        //    Entity newInstance = Instantiate(table);
+        //    newInstance.parent = FindEntityByName("A" + i);
+        //}
+
         //Mesh mesh = new Mesh();
         //for (int i = 0; i < 100; ++i)
         //{
@@ -62,6 +116,7 @@ public class PlayerScript : Entity
 
     public void StartGameCallback()
     {
+        Cursor.Hide();
         GamePaused = false;
         FindEntityByName("StartGui").GetComponent<GuiComponent>().Enabled = false;
     }
@@ -77,6 +132,7 @@ public class PlayerScript : Entity
     {
         if (Input.IsKeyDown(KeyCode.Escape))
         {
+            Cursor.Show();
             GamePaused = true;
             FindEntityByName("StartGui").GetComponent<GuiComponent>().Enabled = true;
         }
