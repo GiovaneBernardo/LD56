@@ -28,6 +28,17 @@ public class PlayerScript : Entity
     public bool GamePaused = true;
     float TableHeight = 0.0f;
     List<Vector3> TablePositions = new List<Vector3>();
+    List<string> ItemNames = new List<string>();
+
+    public class Item
+    {
+        public UInt64 EntityUuid;
+        public string Name;
+
+    }
+
+    public Item ItemInHand = null;//new Item();
+
 
     public int CurrentDimension = 1;
 
@@ -49,7 +60,7 @@ public class PlayerScript : Entity
         {
             Entity newCreature = Instantiate(FindEntityByName("InstantiableCreature1"));
             int number = rnd.Next(0, 18);
-            while(alreadyGeneratedNumbers.Contains(number))
+            while (alreadyGeneratedNumbers.Contains(number))
                 number = rnd.Next(0, 18);
 
             alreadyGeneratedNumbers.Add(number);
@@ -94,24 +105,11 @@ public class PlayerScript : Entity
             }
         }
 
+        ItemNames.Add("SphereCollider");
+        ItemNames.Add("InstantiableCreature1");
+
         SpawnTables();
         SpawnCreatures();
-
-        //for(uint i = 0; i < 2; ++i)
-        //{
-        //    Entity newInstance = Instantiate(table);
-        //    newInstance.parent = FindEntityByName("A" + i);
-        //}
-
-        //Mesh mesh = new Mesh();
-        //for (int i = 0; i < 100; ++i)
-        //{
-        //    for (int j = 0; j < 100; ++j)
-        //    {
-        //
-        //    }
-        //}
-        //FindEntityByName("Floor").GetComponent<MeshRenderer>().mesh = mesh;
     }
 
     public void StartGameCallback()
@@ -125,8 +123,6 @@ public class PlayerScript : Entity
     {
         InternalCalls.CloseGame();
     }
-
-    public bool LastFrameEWasPressed = false;
 
     public void OnUpdate()
     {
@@ -142,7 +138,58 @@ public class PlayerScript : Entity
             MovePlayer();
             RotateCamera();
             SpeedControl();
+            ControlHands();
         }
+    }
+
+    public bool LastFrameEWasPressed = false;
+    public void ControlHands()
+    {
+        if (ItemInHand == null && LastFrameEWasPressed && Input.IsKeyReleased(KeyCode.E))
+        {
+            // Get
+            Console.WriteLine("A1");
+            Physics.RaycastHit hit = Physics.Raycast(this.GetComponent<Transform>().Translation + new Vector3(0.0f, 1.0f, 0.0f), FindEntityByName("CameraEntity").GetComponent<Transform>().ForwardVector, 1000.0f);
+            if (hit.hitUuid != 0)
+            {
+                UInt64 uuidToGet = new Entity(hit.hitUuid).Name == "SphereCollider" ? new Entity(hit.hitUuid).parent.Uuid : hit.hitUuid;
+                Console.WriteLine("Hit Name: " + new Entity(hit.hitUuid).Name);
+                Console.WriteLine("To Get Name: " + new Entity(uuidToGet).Name);
+                Console.WriteLine(hit.hitUuid);
+                Console.WriteLine(new Entity(hit.hitUuid).parent.Uuid);
+                Console.WriteLine(InternalCalls.EntityGetParent(hit.hitUuid));
+                
+                if (new Entity(hit.hitUuid).Name == "SphereCollider")
+                    new Entity(hit.hitUuid).RemoveComponent<Collider>();
+                Console.WriteLine("A2");
+                Console.WriteLine(uuidToGet);
+                Console.WriteLine(new Entity(uuidToGet).Name);
+                Console.WriteLine("A3");
+                if (ItemNames.Contains(new Entity(uuidToGet).Name))
+                {
+                    Console.WriteLine("A4");
+                    ItemInHand = new Item();
+                    ItemInHand.EntityUuid = uuidToGet;
+                    ItemInHand.Name = new Entity(uuidToGet).Name;
+                    Console.WriteLine("A5");
+                    new Entity(uuidToGet).parent = this;
+                    new Entity(uuidToGet).GetComponent<Transform>().Translation = new Vector3(0.0f, 0.5f, 1.0f);
+                }
+            }
+        }
+        else if (LastFrameEWasPressed && Input.IsKeyReleased(KeyCode.E))
+        {
+            //Drop
+            new Entity(ItemInHand.EntityUuid).parent = FindEntityByName("Scene");
+            new Entity(ItemInHand.EntityUuid).GetComponent<Transform>().Translation = FindEntityByName("Body").GetComponent<Transform>().Translation;
+        }
+
+        if (Input.IsKeyDown(KeyCode.E))
+        {
+            LastFrameEWasPressed = true;
+        }
+        else
+            LastFrameEWasPressed = false;
     }
 
     public void MovePlayer()

@@ -1,0 +1,59 @@
+{
+    "value0": {
+        "mAssetUuid": 4573959767646626864,
+        "mAssetName": "textureDebugScene.plzscn",
+        "mainSceneEntityUuid": 8399379610408606450,
+        "entities": [
+            {
+                "key": 8399379610408606450,
+                "value": {
+                    "uuid": 8399379610408606450,
+                    "parentUuid": 14829735431805717965,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "Scene"
+                }
+            }
+        ],
+        "transformComponents": [
+            {
+                "key": 8399379610408606450,
+                "value": {
+                    "value0": {
+                        "mUuid": 8399379610408606450,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            }
+        ],
+        "cameraComponents": [],
+        "meshRendererComponents": [],
+        "rigidBodyComponents": [],
+        "colliderComponents": [],
+        "csScriptComponents": [],
+        "UITextRendererComponents": [],
+        "audioSourceComponents": [],
+        "audioListenerComponents": [],
+        "lightComponents": [],
+        "characterControllerComponents": [],
+        "animationComponentComponents": [],
+        "guiComponents": []
+    }
+}
