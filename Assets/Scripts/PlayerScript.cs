@@ -12,6 +12,14 @@ using static Plaza.Physics;
 
 public class PlayerScript : Entity
 {
+    public enum CreatureState
+    {
+        Alive,
+        Dead
+    }
+
+
+
     public float Gravity = -9.81f;
     public float TotalGravity = 0.0f;
     public float Sensitivity = 0.1f;
@@ -29,6 +37,21 @@ public class PlayerScript : Entity
     float TableHeight = 0.0f;
     List<Vector3> TablePositions = new List<Vector3>();
     List<string> ItemNames = new List<string>();
+    public int TimeLeft = 60;
+    public int MaxTime = 60;
+    public List<UInt64> InstantiatedCreatures = new List<UInt64>();
+    public Dictionary<UInt64, CreatureState> CreaturesState = new Dictionary<UInt64, CreatureState>();
+
+    public enum State
+    {
+        Menu,
+        Playing,
+        TutorialCutscene,
+        TimeOverCutscene
+    }
+
+
+    public State ActiveState = State.Menu;
 
     public class Item
     {
@@ -65,6 +88,8 @@ public class PlayerScript : Entity
 
             alreadyGeneratedNumbers.Add(number);
             newCreature.GetComponent<Transform>().Translation = new Vector3(TablePositions[number].X, 1.0f, TablePositions[number].Z);
+            InstantiatedCreatures.Add(newCreature.Uuid);
+            CreaturesState.Add(newCreature.Uuid, CreatureState.Alive);
         }
     }
 
@@ -105,16 +130,32 @@ public class PlayerScript : Entity
             }
         }
 
-        ItemNames.Add("SphereCollider");
-        ItemNames.Add("InstantiableCreature1");
+        ItemNames.Add("Spray");
+        ItemNames.Add("Brush");
+        //ItemNames.Add("InstntiableCreature1");
 
         SpawnTables();
         SpawnCreatures();
     }
 
+    public void StartPlaying()
+    {
+        SpawnCreatures();
+    }
+
+    public void StopPlaying()
+    {
+        foreach (UInt64 uuid in InstantiatedCreatures)
+        {
+            new Entity(uuid).Delete();
+        }
+    }
+
     public void StartGameCallback()
     {
         Cursor.Hide();
+        SpawnCreatures();
+        ActiveState = State.Playing;
         GamePaused = false;
         FindEntityByName("StartGui").GetComponent<GuiComponent>().Enabled = false;
     }
@@ -124,72 +165,141 @@ public class PlayerScript : Entity
         InternalCalls.CloseGame();
     }
 
+    public void GetEntityInHands(Entity entity)
+    {
+        entity.parent = FindEntityByName("CameraEntity");
+        entity.GetComponent<Transform>().Translation = new Vector3(-0.5f, -0.3f, 0.5f);
+        entity.GetComponent<Transform>().Scale = new Vector3(0.4f);
+        if (entity.HasComponent<RigidBody>())
+            entity.RemoveComponent<RigidBody>();
+        if (entity.HasComponent<Collider>())
+            entity.RemoveComponent<Collider>();
+    }
+
+    public void InteractedWithCreatureCollider(UInt64 creatureUuid)
+    {
+        if (CreaturesState[creatureUuid] == CreatureState.Alive && ItemInHand != null && ItemInHand.Name == "Spray")
+        {
+            CreaturesState[creatureUuid] = CreatureState.Dead;
+            Entity creature = new Entity(creatureUuid);
+            Console.WriteLine(creature.Children.Count);
+        }
+        else if (CreaturesState[creatureUuid] == CreatureState.Dead && ItemInHand == null)
+        {
+            CreaturesState[creatureUuid] = CreatureState.Dead;
+            Entity creature = new Entity(creatureUuid);
+            GetEntityInHands(creature);
+        }
+    }
+
     public void OnUpdate()
     {
         if (Input.IsKeyDown(KeyCode.Escape))
         {
             Cursor.Show();
             GamePaused = true;
+            ActiveState = State.Menu;
+            StopPlaying();
             FindEntityByName("StartGui").GetComponent<GuiComponent>().Enabled = true;
         }
 
-        if (!GamePaused)
+        if (ActiveState == State.Playing)
         {
             MovePlayer();
             RotateCamera();
             SpeedControl();
             ControlHands();
         }
+        else if (ActiveState == State.Menu)
+        {
+
+        }
+        else if (ActiveState == State.TimeOverCutscene)
+        {
+
+        }
     }
 
     public bool LastFrameEWasPressed = false;
     public void ControlHands()
     {
-        if (ItemInHand == null && LastFrameEWasPressed && Input.IsKeyReleased(KeyCode.E))
+        if (LastFrameEWasPressed && Input.IsKeyReleased(KeyCode.E))
         {
+            LastFrameEWasPressed = false;
             // Get
-            Console.WriteLine("A1");
             Physics.RaycastHit hit = Physics.Raycast(this.GetComponent<Transform>().Translation + new Vector3(0.0f, 1.0f, 0.0f), FindEntityByName("CameraEntity").GetComponent<Transform>().ForwardVector, 1000.0f);
             if (hit.hitUuid != 0)
             {
                 UInt64 uuidToGet = new Entity(hit.hitUuid).Name == "SphereCollider" ? new Entity(hit.hitUuid).parent.Uuid : hit.hitUuid;
-                Console.WriteLine("Hit Name: " + new Entity(hit.hitUuid).Name);
-                Console.WriteLine("To Get Name: " + new Entity(uuidToGet).Name);
-                Console.WriteLine(hit.hitUuid);
-                Console.WriteLine(new Entity(hit.hitUuid).parent.Uuid);
-                Console.WriteLine(InternalCalls.EntityGetParent(hit.hitUuid));
-                
+                Console.WriteLine("A1");
+                Console.WriteLine(new Entity(hit.hitUuid).Name);
                 if (new Entity(hit.hitUuid).Name == "SphereCollider")
-                    new Entity(hit.hitUuid).RemoveComponent<Collider>();
-                Console.WriteLine("A2");
-                Console.WriteLine(uuidToGet);
-                Console.WriteLine(new Entity(uuidToGet).Name);
-                Console.WriteLine("A3");
-                if (ItemNames.Contains(new Entity(uuidToGet).Name))
                 {
-                    Console.WriteLine("A4");
+                    Console.WriteLine("A2");
+                    //new Entity(hit.hitUuid).RemoveComponent<Collider>();
+                    InteractedWithCreatureCollider(uuidToGet);
+                }
+                else if (ItemNames.Contains(new Entity(uuidToGet).Name))
+                {
+                    Console.WriteLine("A3");
                     ItemInHand = new Item();
                     ItemInHand.EntityUuid = uuidToGet;
                     ItemInHand.Name = new Entity(uuidToGet).Name;
-                    Console.WriteLine("A5");
-                    new Entity(uuidToGet).parent = this;
-                    new Entity(uuidToGet).GetComponent<Transform>().Translation = new Vector3(0.0f, 0.5f, 1.0f);
+                    GetEntityInHands(new Entity(uuidToGet));
+                    //new Entity(uuidToGet).parent = this;
+                    //new Entity(uuidToGet).GetComponent<Transform>().Translation = new Vector3(0.0f, 0.5f, 1.0f);
+                }
+
+                else if (ItemInHand != null)
+                {
+                    Console.WriteLine("A4");
+                    //Drop
+                    Entity entity = new Entity(ItemInHand.EntityUuid);
+                    entity.parent = FindEntityByName("Scene");
+                    entity.GetComponent<Transform>().Scale = new Vector3(1.0f);
+                    entity.GetComponent<Transform>().Translation = FindEntityByName("Body").GetComponent<Transform>().Translation + (FindEntityByName("CameraEntity").GetComponent<Transform>().ForwardVector * entity.GetComponent<Transform>().Translation);
+                    if (!entity.HasComponent<Collider>())
+                    {
+                        entity.AddComponent<Collider>();
+                        entity.GetComponent<Collider>().AddShape(ColliderShapeEnum.MESH);
+                    }
+                    ItemInHand = null;
                 }
             }
         }
-        else if (LastFrameEWasPressed && Input.IsKeyReleased(KeyCode.E))
+
+        if (Input.IsMouseDown(0) && ItemInHand != null)
         {
-            //Drop
-            new Entity(ItemInHand.EntityUuid).parent = FindEntityByName("Scene");
-            new Entity(ItemInHand.EntityUuid).GetComponent<Transform>().Translation = FindEntityByName("Body").GetComponent<Transform>().Translation;
+            // Get
+            Physics.RaycastHit hit = Physics.Raycast(this.GetComponent<Transform>().Translation + new Vector3(0.0f, 1.0f, 0.0f), FindEntityByName("CameraEntity").GetComponent<Transform>().ForwardVector, 1000.0f);
+            if (ItemInHand.Name == "Spray" && new Entity(hit.hitUuid).Name == "SphereCollider")
+            {
+                Entity creature = new Entity(hit.hitUuid).parent;
+                KillCreature(creature);
+            }
+            else if (ItemInHand.Name == "Brush" && new Entity(hit.hitUuid).Name == "Dirt")
+            {
+
+            }
         }
 
+        //Console.WriteLine("asd");
         if (Input.IsKeyDown(KeyCode.E))
         {
             LastFrameEWasPressed = true;
         }
         else
             LastFrameEWasPressed = false;
+    }
+
+    public void KillCreature(Entity creature)
+    {
+        if (CreaturesState[creature.Uuid] == CreatureState.Alive)
+        {
+            CreaturesState[creature.Uuid] = CreatureState.Dead;
+
+            Instantiate(FindEntityByName("InstantiableDirt")).GetComponent<Transform>().Translation = creature.GetComponent<Transform>().Translation + new Vector3(0.0f, 0.01f, 0.0f);
+        }
     }
 
     public void MovePlayer()

@@ -37,7 +37,10 @@
                         4966909709757005222,
                         12519708844535133399,
                         17213125888213324128,
-                        35828668166083881
+                        35828668166083881,
+                        2845290623016481510,
+                        14726004837049144940,
+                        607020262008901214
                     ],
                     "name": "Scene"
                 }
@@ -183,7 +186,9 @@
                     "parentUuid": 7600339639355508301,
                     "prefabUuid": 14829735431805717965,
                     "equivalentPrefabUuid": 14829735431805717965,
-                    "childrenUuid": [],
+                    "childrenUuid": [
+                        5602608724040188241
+                    ],
                     "name": "CameraEntity"
                 }
             },
@@ -545,7 +550,9 @@
                         17986821218118375878,
                         12709694731121476024,
                         4814217656703685659,
-                        14478184889076610244
+                        14478184889076610244,
+                        8892536764803258436,
+                        15203483188354698447
                     ],
                     "name": "Restaurant"
                 }
@@ -825,20 +832,461 @@
                     ],
                     "name": "uploads_files_2257883_dumpster_fbx"
                 }
+            },
+            {
+                "key": 2845290623016481510,
+                "value": {
+                    "uuid": 2845290623016481510,
+                    "parentUuid": 12952473987397724,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "Spray"
+                }
+            },
+            {
+                "key": 14726004837049144940,
+                "value": {
+                    "uuid": 14726004837049144940,
+                    "parentUuid": 12952473987397724,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "Brush"
+                }
+            },
+            {
+                "key": 5602608724040188241,
+                "value": {
+                    "uuid": 5602608724040188241,
+                    "parentUuid": 4391549531439643414,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "Sphere"
+                }
+            },
+            {
+                "key": 607020262008901214,
+                "value": {
+                    "uuid": 607020262008901214,
+                    "parentUuid": 12952473987397724,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "OrbitalCamera"
+                }
+            },
+            {
+                "key": 8892536764803258436,
+                "value": {
+                    "uuid": 8892536764803258436,
+                    "parentUuid": 4698681838960555736,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "Floor"
+                }
+            },
+            {
+                "key": 15203483188354698447,
+                "value": {
+                    "uuid": 15203483188354698447,
+                    "parentUuid": 4698681838960555736,
+                    "prefabUuid": 14829735431805717965,
+                    "equivalentPrefabUuid": 14829735431805717965,
+                    "childrenUuid": [],
+                    "name": "Floor"
+                }
             }
         ],
         "transformComponents": [
             {
-                "key": 13970834177444131976,
+                "key": 9373782372264568905,
                 "value": {
                     "value0": {
-                        "mUuid": 13970834177444131976,
+                        "mUuid": 9373782372264568905,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.8362637758255005,
+                        "value1": 0.2046041488647461,
+                        "value2": -0.36118173599243166
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 0.30000001192092898,
+                        "value1": 0.30000001192092898,
+                        "value2": 0.30000001192092898
+                    }
+                }
+            },
+            {
+                "key": 8947162720277779977,
+                "value": {
+                    "value0": {
+                        "mUuid": 8947162720277779977,
                         "mEnabled": true
                     },
                     "relativePosition": {
                         "value0": 0.0,
-                        "value1": -0.176666259765625,
-                        "value2": -0.10000000149011612
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067690849304,
+                        "value1": 0.7071067690849304,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 14095668398510921002,
+                "value": {
+                    "value0": {
+                        "mUuid": 14095668398510921002,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": -6.619856357574463,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067094802856,
+                        "value1": -0.7071068286895752,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 100.0,
+                        "value1": 100.0,
+                        "value2": 100.0
+                    }
+                }
+            },
+            {
+                "key": 12709694731121476024,
+                "value": {
+                    "value0": {
+                        "mUuid": 12709694731121476024,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -0.7639999389648438,
+                        "value1": 0.0290069580078125,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 7.549790126404332e-8,
+                        "value1": -1.0,
+                        "value2": -0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 7854620921524232164,
+                "value": {
+                    "value0": {
+                        "mUuid": 7854620921524232164,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067690849304,
+                        "value1": -0.7071067690849304,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 241904308167674241,
+                "value": {
+                    "value0": {
+                        "mUuid": 241904308167674241,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 4966909709757005222,
+                "value": {
+                    "value0": {
+                        "mUuid": 4966909709757005222,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 0.05000000074505806,
+                        "value1": 0.05000000074505806,
+                        "value2": 0.05000000074505806
+                    }
+                }
+            },
+            {
+                "key": 14756713748962125344,
+                "value": {
+                    "value0": {
+                        "mUuid": 14756713748962125344,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 2.0007660388946535,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067094802856,
+                        "value1": -0.7071068286895752,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 0.05000000074505806
+                    }
+                }
+            },
+            {
+                "key": 4001208177025528193,
+                "value": {
+                    "value0": {
+                        "mUuid": 4001208177025528193,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -0.46940845251083376,
+                        "value1": 0.4744386374950409,
+                        "value2": 1.1732844114303589
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 4391549531439643414,
+                "value": {
+                    "value0": {
+                        "mUuid": 4391549531439643414,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 1.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 17213125888213324128,
+                "value": {
+                    "value0": {
+                        "mUuid": 17213125888213324128,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 2899955011135268420,
+                "value": {
+                    "value0": {
+                        "mUuid": 2899955011135268420,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 104.62110137939453,
+                        "value1": 3.2108571529388429,
+                        "value2": 45.966957092285159
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 16.0,
+                        "value1": 1.0,
+                        "value2": 32.0
+                    }
+                }
+            },
+            {
+                "key": 9697634169664006616,
+                "value": {
+                    "value0": {
+                        "mUuid": 9697634169664006616,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.8069819808006287,
+                        "value1": 0.37665504217147829,
+                        "value2": 0.09620574116706848
+                    },
+                    "rotation": {
+                        "value0": 1.9470718370939722e-7,
+                        "value1": 0.0,
+                        "value2": -0.0,
+                        "value3": -1.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 12952473987397724,
+                "value": {
+                    "value0": {
+                        "mUuid": 12952473987397724,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 6424506391878820754,
+                "value": {
+                    "value0": {
+                        "mUuid": 6424506391878820754,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 9.550332069396973,
+                        "value1": 5.2480316162109379,
+                        "value2": 4.180532455444336
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 9350514292058619939,
+                "value": {
+                    "value0": {
+                        "mUuid": 9350514292058619939,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -3.0,
+                        "value1": 0.6000000238418579,
+                        "value2": 0.0
                     },
                     "rotation": {
                         "value0": 1.0,
@@ -879,15 +1327,65 @@
                 }
             },
             {
-                "key": 9350514292058619939,
+                "key": 13970834177444131976,
                 "value": {
                     "value0": {
-                        "mUuid": 9350514292058619939,
+                        "mUuid": 13970834177444131976,
                         "mEnabled": true
                     },
                     "relativePosition": {
-                        "value0": -3.0,
-                        "value1": 0.6000000238418579,
+                        "value0": 0.0,
+                        "value1": -0.176666259765625,
+                        "value2": -0.10000000149011612
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 12052012834266549059,
+                "value": {
+                    "value0": {
+                        "mUuid": 12052012834266549059,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 4924635987092424270,
+                "value": {
+                    "value0": {
+                        "mUuid": 4924635987092424270,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -4.0,
+                        "value1": 1.0,
                         "value2": 0.0
                     },
                     "rotation": {
@@ -904,16 +1402,41 @@
                 }
             },
             {
-                "key": 6424506391878820754,
+                "key": 6070806897694951879,
                 "value": {
                     "value0": {
-                        "mUuid": 6424506391878820754,
+                        "mUuid": 6070806897694951879,
                         "mEnabled": true
                     },
                     "relativePosition": {
-                        "value0": 9.550332069396973,
-                        "value1": 5.2480316162109379,
-                        "value2": 4.180532455444336
+                        "value0": 0.0,
+                        "value1": -2.316366195678711,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 256.0,
+                        "value1": 1.0,
+                        "value2": 256.0
+                    }
+                }
+            },
+            {
+                "key": 6755735780003893516,
+                "value": {
+                    "value0": {
+                        "mUuid": 6755735780003893516,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -3.1031429767608644,
+                        "value1": 0.0,
+                        "value2": 2.74483323097229
                     },
                     "rotation": {
                         "value0": 1.0,
@@ -979,6 +1502,156 @@
                 }
             },
             {
+                "key": 2182639847413957444,
+                "value": {
+                    "value0": {
+                        "mUuid": 2182639847413957444,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.46159031987190249,
+                        "value1": 0.4744386374950409,
+                        "value2": 1.1732844114303589
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 10004696666269789183,
+                "value": {
+                    "value0": {
+                        "mUuid": 10004696666269789183,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -2.0,
+                        "value1": 0.4000000059604645,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 12519708844535133399,
+                "value": {
+                    "value0": {
+                        "mUuid": 12519708844535133399,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 0.5,
+                        "value1": 0.019999999552965165,
+                        "value2": 0.5
+                    }
+                }
+            },
+            {
+                "key": 8444290052044478219,
+                "value": {
+                    "value0": {
+                        "mUuid": 8444290052044478219,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067690849304,
+                        "value1": -0.7071067690849304,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 6267176638215227952,
+                "value": {
+                    "value0": {
+                        "mUuid": 6267176638215227952,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 15.0,
+                        "value1": 8.0,
+                        "value2": 15.0
+                    }
+                }
+            },
+            {
+                "key": 4814217656703685659,
+                "value": {
+                    "value0": {
+                        "mUuid": 4814217656703685659,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -0.7639999389648438,
+                        "value1": 0.0050048828125,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
                 "key": 4722087696917742419,
                 "value": {
                     "value0": {
@@ -1029,20 +1702,45 @@
                 }
             },
             {
-                "key": 17507105792983575848,
+                "key": 7312647110968873931,
                 "value": {
                     "value0": {
-                        "mUuid": 17507105792983575848,
+                        "mUuid": 7312647110968873931,
                         "mEnabled": true
                     },
                     "relativePosition": {
-                        "value0": -1.6256802082061768,
-                        "value1": 0.0,
-                        "value2": -8.439201354980469
+                        "value0": 0.0,
+                        "value1": -0.12000274658203125,
+                        "value2": -0.0020000000949949028
                     },
                     "rotation": {
                         "value0": 1.0,
                         "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 7876863984786456465,
+                "value": {
+                    "value0": {
+                        "mUuid": 7876863984786456465,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067690849304,
+                        "value1": -0.7071067690849304,
                         "value2": 0.0,
                         "value3": 0.0
                     },
@@ -1079,10 +1777,35 @@
                 }
             },
             {
-                "key": 7876863984786456465,
+                "key": 17507105792983575848,
                 "value": {
                     "value0": {
-                        "mUuid": 7876863984786456465,
+                        "mUuid": 17507105792983575848,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -1.6256802082061768,
+                        "value1": 0.0,
+                        "value2": -8.439201354980469
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 5129648932907387670,
+                "value": {
+                    "value0": {
+                        "mUuid": 5129648932907387670,
                         "mEnabled": true
                     },
                     "relativePosition": {
@@ -1091,8 +1814,33 @@
                         "value2": 0.0
                     },
                     "rotation": {
-                        "value0": 0.7071067690849304,
-                        "value1": -0.7071067690849304,
+                        "value0": 0.7071067094802856,
+                        "value1": -0.7071068286895752,
+                        "value2": -0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 17986821218118375878,
+                "value": {
+                    "value0": {
+                        "mUuid": 17986821218118375878,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -0.7639999389648438,
+                        "value1": 0.00499725341796875,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
                         "value2": 0.0,
                         "value3": 0.0
                     },
@@ -1129,35 +1877,10 @@
                 }
             },
             {
-                "key": 17986821218118375878,
+                "key": 12615589581081153216,
                 "value": {
                     "value0": {
-                        "mUuid": 17986821218118375878,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -0.7639999389648438,
-                        "value1": 0.00499725341796875,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 5129648932907387670,
-                "value": {
-                    "value0": {
-                        "mUuid": 5129648932907387670,
+                        "mUuid": 12615589581081153216,
                         "mEnabled": true
                     },
                     "relativePosition": {
@@ -1169,6 +1892,31 @@
                         "value0": 0.7071067094802856,
                         "value1": -0.7071068286895752,
                         "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 7329134632968750093,
+                "value": {
+                    "value0": {
+                        "mUuid": 7329134632968750093,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 4.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067094802856,
+                        "value1": -0.7071068286895752,
+                        "value2": -0.0,
                         "value3": 0.0
                     },
                     "scale": {
@@ -1204,456 +1952,6 @@
                 }
             },
             {
-                "key": 7329134632968750093,
-                "value": {
-                    "value0": {
-                        "mUuid": 7329134632968750093,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 4.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067094802856,
-                        "value1": -0.7071068286895752,
-                        "value2": -0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 12952473987397724,
-                "value": {
-                    "value0": {
-                        "mUuid": 12952473987397724,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 18166573330353479081,
-                "value": {
-                    "value0": {
-                        "mUuid": 18166573330353479081,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 12052012834266549059,
-                "value": {
-                    "value0": {
-                        "mUuid": 12052012834266549059,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 4924635987092424270,
-                "value": {
-                    "value0": {
-                        "mUuid": 4924635987092424270,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -4.0,
-                        "value1": 1.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 12709694731121476024,
-                "value": {
-                    "value0": {
-                        "mUuid": 12709694731121476024,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -0.7639999389648438,
-                        "value1": 0.0290069580078125,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 7.549790126404332e-8,
-                        "value1": -1.0,
-                        "value2": -0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 14095668398510921002,
-                "value": {
-                    "value0": {
-                        "mUuid": 14095668398510921002,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": -6.619856357574463,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067094802856,
-                        "value1": -0.7071068286895752,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 100.0,
-                        "value1": 100.0,
-                        "value2": 100.0
-                    }
-                }
-            },
-            {
-                "key": 170761521413329779,
-                "value": {
-                    "value0": {
-                        "mUuid": 170761521413329779,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 9373782372264568905,
-                "value": {
-                    "value0": {
-                        "mUuid": 9373782372264568905,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.8362637758255005,
-                        "value1": 0.2046041488647461,
-                        "value2": -0.36118173599243166
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 0.30000001192092898,
-                        "value1": 0.30000001192092898,
-                        "value2": 0.30000001192092898
-                    }
-                }
-            },
-            {
-                "key": 8947162720277779977,
-                "value": {
-                    "value0": {
-                        "mUuid": 8947162720277779977,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067690849304,
-                        "value1": 0.7071067690849304,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 16052822184939088722,
-                "value": {
-                    "value0": {
-                        "mUuid": 16052822184939088722,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -4.870446681976318,
-                        "value1": 0.0,
-                        "value2": -1.6974246501922608
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 14478184889076610244,
-                "value": {
-                    "value0": {
-                        "mUuid": 14478184889076610244,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 2.4033055305480959,
-                        "value2": -32.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071068286895752,
-                        "value1": 0.7071067690849304,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 0.009999999776482582
-                    }
-                }
-            },
-            {
-                "key": 8488156703892366300,
-                "value": {
-                    "value0": {
-                        "mUuid": 8488156703892366300,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -1.5,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067094802856,
-                        "value1": -0.7071068286895752,
-                        "value2": -0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 0.5,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 15819355638987984243,
-                "value": {
-                    "value0": {
-                        "mUuid": 15819355638987984243,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067094802856,
-                        "value1": -0.7071068286895752,
-                        "value2": -0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 4698681838960555736,
-                "value": {
-                    "value0": {
-                        "mUuid": 4698681838960555736,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 63.0286865234375
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 13665512827287805868,
-                "value": {
-                    "value0": {
-                        "mUuid": 13665512827287805868,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 1.5,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 2.247647756803417e-8,
-                        "value1": 8.429368847373553e-8,
-                        "value2": 0.7071067094802856,
-                        "value3": 0.7071068286895752
-                    },
-                    "scale": {
-                        "value0": 0.5,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 6755735780003893516,
-                "value": {
-                    "value0": {
-                        "mUuid": 6755735780003893516,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -3.1031429767608644,
-                        "value1": 0.0,
-                        "value2": 2.74483323097229
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 6070806897694951879,
-                "value": {
-                    "value0": {
-                        "mUuid": 6070806897694951879,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": -2.316366195678711,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 256.0,
-                        "value1": 1.0,
-                        "value2": 256.0
-                    }
-                }
-            },
-            {
                 "key": 6018595646916739693,
                 "value": {
                     "value0": {
@@ -1670,431 +1968,6 @@
                         "value1": 0.0,
                         "value2": -0.0,
                         "value3": -1.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 7854620921524232164,
-                "value": {
-                    "value0": {
-                        "mUuid": 7854620921524232164,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067690849304,
-                        "value1": -0.7071067690849304,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 241904308167674241,
-                "value": {
-                    "value0": {
-                        "mUuid": 241904308167674241,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 14744355056847701778,
-                "value": {
-                    "value0": {
-                        "mUuid": 14744355056847701778,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 2.6131725311279299,
-                        "value1": 0.0,
-                        "value2": -4.862607479095459
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 15573626648633158513,
-                "value": {
-                    "value0": {
-                        "mUuid": 15573626648633158513,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": -2.107724189758301,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 3.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 4966909709757005222,
-                "value": {
-                    "value0": {
-                        "mUuid": 4966909709757005222,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 0.05000000074505806,
-                        "value1": 0.05000000074505806,
-                        "value2": 0.05000000074505806
-                    }
-                }
-            },
-            {
-                "key": 14756713748962125344,
-                "value": {
-                    "value0": {
-                        "mUuid": 14756713748962125344,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 2.0007660388946535,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067094802856,
-                        "value1": -0.7071068286895752,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 0.05000000074505806
-                    }
-                }
-            },
-            {
-                "key": 12519708844535133399,
-                "value": {
-                    "value0": {
-                        "mUuid": 12519708844535133399,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 0.5,
-                        "value1": 0.019999999552965165,
-                        "value2": 0.5
-                    }
-                }
-            },
-            {
-                "key": 10004696666269789183,
-                "value": {
-                    "value0": {
-                        "mUuid": 10004696666269789183,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -2.0,
-                        "value1": 0.4000000059604645,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 4814217656703685659,
-                "value": {
-                    "value0": {
-                        "mUuid": 4814217656703685659,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -0.7639999389648438,
-                        "value1": 0.0050048828125,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 6267176638215227952,
-                "value": {
-                    "value0": {
-                        "mUuid": 6267176638215227952,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 15.0,
-                        "value1": 8.0,
-                        "value2": 15.0
-                    }
-                }
-            },
-            {
-                "key": 2182639847413957444,
-                "value": {
-                    "value0": {
-                        "mUuid": 2182639847413957444,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.46159031987190249,
-                        "value1": 0.4744386374950409,
-                        "value2": 1.1732844114303589
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 17213125888213324128,
-                "value": {
-                    "value0": {
-                        "mUuid": 17213125888213324128,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 4391549531439643414,
-                "value": {
-                    "value0": {
-                        "mUuid": 4391549531439643414,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 1.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 4001208177025528193,
-                "value": {
-                    "value0": {
-                        "mUuid": 4001208177025528193,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": -0.46940845251083376,
-                        "value1": 0.4744386374950409,
-                        "value2": 1.1732844114303589
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 8444290052044478219,
-                "value": {
-                    "value0": {
-                        "mUuid": 8444290052044478219,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067690849304,
-                        "value1": -0.7071067690849304,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 7312647110968873931,
-                "value": {
-                    "value0": {
-                        "mUuid": 7312647110968873931,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": -0.12000274658203125,
-                        "value2": -0.0020000000949949028
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 12615589581081153216,
-                "value": {
-                    "value0": {
-                        "mUuid": 12615589581081153216,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.0,
-                        "value1": 0.0,
-                        "value2": 0.0
-                    },
-                    "rotation": {
-                        "value0": 0.7071067094802856,
-                        "value1": -0.7071068286895752,
-                        "value2": 0.0,
-                        "value3": 0.0
                     },
                     "scale": {
                         "value0": 1.0,
@@ -2139,6 +2012,106 @@
                         "value0": 0.417999267578125,
                         "value1": 1.077127456665039,
                         "value2": 3.5663223266601564
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 170761521413329779,
+                "value": {
+                    "value0": {
+                        "mUuid": 170761521413329779,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 18166573330353479081,
+                "value": {
+                    "value0": {
+                        "mUuid": 18166573330353479081,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 13665512827287805868,
+                "value": {
+                    "value0": {
+                        "mUuid": 13665512827287805868,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 1.5,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 2.247647756803417e-8,
+                        "value1": 8.429368847373553e-8,
+                        "value2": 0.7071067094802856,
+                        "value3": 0.7071068286895752
+                    },
+                    "scale": {
+                        "value0": 0.5,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 4698681838960555736,
+                "value": {
+                    "value0": {
+                        "mUuid": 4698681838960555736,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 63.0286865234375
                     },
                     "rotation": {
                         "value0": 1.0,
@@ -2229,6 +2202,106 @@
                 }
             },
             {
+                "key": 15819355638987984243,
+                "value": {
+                    "value0": {
+                        "mUuid": 15819355638987984243,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067094802856,
+                        "value1": -0.7071068286895752,
+                        "value2": -0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 8488156703892366300,
+                "value": {
+                    "value0": {
+                        "mUuid": 8488156703892366300,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -1.5,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067094802856,
+                        "value1": -0.7071068286895752,
+                        "value2": -0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 0.5,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 14478184889076610244,
+                "value": {
+                    "value0": {
+                        "mUuid": 14478184889076610244,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 2.25,
+                        "value2": -32.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071068286895752,
+                        "value1": 0.7071067690849304,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 0.009999999776482582
+                    }
+                }
+            },
+            {
+                "key": 16052822184939088722,
+                "value": {
+                    "value0": {
+                        "mUuid": 16052822184939088722,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": -4.870446681976318,
+                        "value1": 0.0,
+                        "value2": -1.6974246501922608
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
                 "key": 16547892072146139290,
                 "value": {
                     "value0": {
@@ -2250,56 +2323,6 @@
                         "value0": 64.0,
                         "value1": 1.0,
                         "value2": 64.0
-                    }
-                }
-            },
-            {
-                "key": 9697634169664006616,
-                "value": {
-                    "value0": {
-                        "mUuid": 9697634169664006616,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 0.8069819808006287,
-                        "value1": 0.37665504217147829,
-                        "value2": 0.09620574116706848
-                    },
-                    "rotation": {
-                        "value0": 1.9470718370939722e-7,
-                        "value1": 0.0,
-                        "value2": -0.0,
-                        "value3": -1.0
-                    },
-                    "scale": {
-                        "value0": 1.0,
-                        "value1": 1.0,
-                        "value2": 1.0
-                    }
-                }
-            },
-            {
-                "key": 2899955011135268420,
-                "value": {
-                    "value0": {
-                        "mUuid": 2899955011135268420,
-                        "mEnabled": true
-                    },
-                    "relativePosition": {
-                        "value0": 104.62110137939453,
-                        "value1": 3.2108571529388429,
-                        "value2": 45.966957092285159
-                    },
-                    "rotation": {
-                        "value0": 1.0,
-                        "value1": 0.0,
-                        "value2": 0.0,
-                        "value3": 0.0
-                    },
-                    "scale": {
-                        "value0": 16.0,
-                        "value1": 1.0,
-                        "value2": 32.0
                     }
                 }
             },
@@ -2404,6 +2427,56 @@
                 }
             },
             {
+                "key": 15573626648633158513,
+                "value": {
+                    "value0": {
+                        "mUuid": 15573626648633158513,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": -2.107724189758301,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 3.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 14744355056847701778,
+                "value": {
+                    "value0": {
+                        "mUuid": 14744355056847701778,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 2.6131725311279299,
+                        "value1": 0.0,
+                        "value2": -4.862607479095459
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
                 "key": 5617748068834068158,
                 "value": {
                     "value0": {
@@ -2502,6 +2575,156 @@
                         "value2": 0.009999999776482582
                     }
                 }
+            },
+            {
+                "key": 2845290623016481510,
+                "value": {
+                    "value0": {
+                        "mUuid": 2845290623016481510,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 7.092974662780762,
+                        "value1": 0.492462158203125,
+                        "value2": 53.07368469238281
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 14726004837049144940,
+                "value": {
+                    "value0": {
+                        "mUuid": 14726004837049144940,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 52.191375732421878
+                    },
+                    "rotation": {
+                        "value0": 1.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 5602608724040188241,
+                "value": {
+                    "value0": {
+                        "mUuid": 5602608724040188241,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.03500000014901161
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 0.0005000000237487257,
+                        "value1": 0.0005000000237487257,
+                        "value2": 0.0005000000237487257
+                    }
+                }
+            },
+            {
+                "key": 607020262008901214,
+                "value": {
+                    "value0": {
+                        "mUuid": 607020262008901214,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 1.0
+                    }
+                }
+            },
+            {
+                "key": 8892536764803258436,
+                "value": {
+                    "value0": {
+                        "mUuid": 8892536764803258436,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 2.4030001163482668,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071067690849304,
+                        "value1": -0.7071067690849304,
+                        "value2": 0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 0.009999999776482582
+                    }
+                }
+            },
+            {
+                "key": 15203483188354698447,
+                "value": {
+                    "value0": {
+                        "mUuid": 15203483188354698447,
+                        "mEnabled": true
+                    },
+                    "relativePosition": {
+                        "value0": 0.0,
+                        "value1": 2.7260000705718996,
+                        "value2": 0.0
+                    },
+                    "rotation": {
+                        "value0": 0.7071068286895752,
+                        "value1": -0.7071067690849304,
+                        "value2": -0.0,
+                        "value3": 0.0
+                    },
+                    "scale": {
+                        "value0": 1.0,
+                        "value1": 1.0,
+                        "value2": 0.009999999776482582
+                    }
+                }
             }
         ],
         "cameraComponents": [
@@ -2532,6 +2755,50 @@
                         "value0": 1.0,
                         "value1": 0.0,
                         "value2": 0.0
+                    },
+                    "WorldUp": {
+                        "value0": 0.0,
+                        "value1": 1.0,
+                        "value2": 0.0
+                    },
+                    "Yaw": -90.0,
+                    "Pitch": 0.0,
+                    "MovementSpeed": 2.5,
+                    "MovementSpeedTemporaryBoost": -431602080.0,
+                    "MouseSensitivity": 0.10000000149011612,
+                    "Zoom": 60.0,
+                    "nearPlane": 0.009999999776482582,
+                    "farPlane": 15000.0,
+                    "aspectRatio": 1.0
+                }
+            },
+            {
+                "key": 607020262008901214,
+                "value": {
+                    "value0": {
+                        "mUuid": 607020262008901214,
+                        "mEnabled": true
+                    },
+                    "isEditorCamera": false,
+                    "Position": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": 0.0
+                    },
+                    "Front": {
+                        "value0": 0.0,
+                        "value1": 0.0,
+                        "value2": -1.0
+                    },
+                    "Up": {
+                        "value0": -431602080.0,
+                        "value1": -431602080.0,
+                        "value2": -431602080.0
+                    },
+                    "Right": {
+                        "value0": -431602080.0,
+                        "value1": -431602080.0,
+                        "value2": -431602080.0
                     },
                     "WorldUp": {
                         "value0": 0.0,
@@ -2818,6 +3085,20 @@
                 }
             },
             {
+                "key": 5602608724040188241,
+                "value": {
+                    "value0": {
+                        "mUuid": 5602608724040188241,
+                        "mEnabled": true
+                    },
+                    "castShadows": true,
+                    "mMeshUuid": 2,
+                    "mMaterialsUuids": [
+                        0
+                    ]
+                }
+            },
+            {
                 "key": 5129648932907387670,
                 "value": {
                     "value0": {
@@ -2898,6 +3179,20 @@
                     "mMeshUuid": 1505328235500766016,
                     "mMaterialsUuids": [
                         17983572109455340916
+                    ]
+                }
+            },
+            {
+                "key": 15203483188354698447,
+                "value": {
+                    "value0": {
+                        "mUuid": 15203483188354698447,
+                        "mEnabled": true
+                    },
+                    "castShadows": true,
+                    "mMeshUuid": 15337345618395104651,
+                    "mMaterialsUuids": [
+                        16981843352894263922
                     ]
                 }
             },
@@ -3318,6 +3613,48 @@
                     "mMeshUuid": 5413166339427035127,
                     "mMaterialsUuids": [
                         13488310724982848015
+                    ]
+                }
+            },
+            {
+                "key": 2845290623016481510,
+                "value": {
+                    "value0": {
+                        "mUuid": 2845290623016481510,
+                        "mEnabled": true
+                    },
+                    "castShadows": true,
+                    "mMeshUuid": 1,
+                    "mMaterialsUuids": [
+                        0
+                    ]
+                }
+            },
+            {
+                "key": 14726004837049144940,
+                "value": {
+                    "value0": {
+                        "mUuid": 14726004837049144940,
+                        "mEnabled": true
+                    },
+                    "castShadows": true,
+                    "mMeshUuid": 2,
+                    "mMaterialsUuids": [
+                        0
+                    ]
+                }
+            },
+            {
+                "key": 8892536764803258436,
+                "value": {
+                    "value0": {
+                        "mUuid": 8892536764803258436,
+                        "mEnabled": true
+                    },
+                    "castShadows": true,
+                    "mMeshUuid": 15337345618395104651,
+                    "mMaterialsUuids": [
+                        16981843352894263922
                     ]
                 }
             }
@@ -3774,6 +4111,27 @@
                 }
             },
             {
+                "key": 15203483188354698447,
+                "value": {
+                    "value0": {
+                        "mUuid": 15203483188354698447,
+                        "mEnabled": true
+                    },
+                    "value1": false,
+                    "value2": [
+                        {
+                            "ptr_wrapper": {
+                                "id": 2147483663,
+                                "data": {
+                                    "mEnum": 5,
+                                    "mMeshUuid": 15337345618395104651
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
                 "key": 6018595646916739693,
                 "value": {
                     "value0": {
@@ -3806,7 +4164,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483663,
+                                "id": 2147483664,
                                 "data": {
                                     "mEnum": 1,
                                     "mMeshUuid": 0
@@ -3882,7 +4240,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483664,
+                                "id": 2147483665,
                                 "data": {
                                     "mEnum": 0,
                                     "mMeshUuid": 0
@@ -3903,7 +4261,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483665,
+                                "id": 2147483666,
                                 "data": {
                                     "mEnum": 0,
                                     "mMeshUuid": 0
@@ -3924,7 +4282,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483666,
+                                "id": 2147483667,
                                 "data": {
                                     "mEnum": 0,
                                     "mMeshUuid": 0
@@ -3945,7 +4303,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483667,
+                                "id": 2147483668,
                                 "data": {
                                     "mEnum": 0,
                                     "mMeshUuid": 0
@@ -3977,7 +4335,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483668,
+                                "id": 2147483669,
                                 "data": {
                                     "mEnum": 5,
                                     "mMeshUuid": 15337345618395104651
@@ -3998,7 +4356,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483669,
+                                "id": 2147483670,
                                 "data": {
                                     "mEnum": 5,
                                     "mMeshUuid": 6883126088642429035
@@ -4019,7 +4377,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483670,
+                                "id": 2147483671,
                                 "data": {
                                     "mEnum": 1,
                                     "mMeshUuid": 0
@@ -4040,7 +4398,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483671,
+                                "id": 2147483672,
                                 "data": {
                                     "mEnum": 0,
                                     "mMeshUuid": 0
@@ -4072,7 +4430,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483672,
+                                "id": 2147483673,
                                 "data": {
                                     "mEnum": 0,
                                     "mMeshUuid": 0
@@ -4093,7 +4451,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483673,
+                                "id": 2147483674,
                                 "data": {
                                     "mEnum": 1,
                                     "mMeshUuid": 0
@@ -4125,7 +4483,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483674,
+                                "id": 2147483675,
                                 "data": {
                                     "mEnum": 0,
                                     "mMeshUuid": 0
@@ -4146,7 +4504,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483675,
+                                "id": 2147483676,
                                 "data": {
                                     "mEnum": 1,
                                     "mMeshUuid": 0
@@ -4167,7 +4525,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483676,
+                                "id": 2147483677,
                                 "data": {
                                     "mEnum": 5,
                                     "mMeshUuid": 6883126088642429035
@@ -4199,7 +4557,7 @@
                     "value2": [
                         {
                             "ptr_wrapper": {
-                                "id": 2147483677,
+                                "id": 2147483678,
                                 "data": {
                                     "mEnum": 1,
                                     "mMeshUuid": 0
@@ -4252,9 +4610,83 @@
                     "value1": false,
                     "value2": []
                 }
+            },
+            {
+                "key": 2845290623016481510,
+                "value": {
+                    "value0": {
+                        "mUuid": 2845290623016481510,
+                        "mEnabled": true
+                    },
+                    "value1": false,
+                    "value2": [
+                        {
+                            "ptr_wrapper": {
+                                "id": 2147483679,
+                                "data": {
+                                    "mEnum": 0,
+                                    "mMeshUuid": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "key": 14726004837049144940,
+                "value": {
+                    "value0": {
+                        "mUuid": 14726004837049144940,
+                        "mEnabled": true
+                    },
+                    "value1": false,
+                    "value2": [
+                        {
+                            "ptr_wrapper": {
+                                "id": 2147483680,
+                                "data": {
+                                    "mEnum": 1,
+                                    "mMeshUuid": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "key": 8892536764803258436,
+                "value": {
+                    "value0": {
+                        "mUuid": 8892536764803258436,
+                        "mEnabled": true
+                    },
+                    "value1": false,
+                    "value2": [
+                        {
+                            "ptr_wrapper": {
+                                "id": 2147483681,
+                                "data": {
+                                    "mEnum": 5,
+                                    "mMeshUuid": 15337345618395104651
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         ],
         "csScriptComponents": [
+            {
+                "key": 607020262008901214,
+                "value": {
+                    "value0": {
+                        "mUuid": 607020262008901214,
+                        "mEnabled": true
+                    },
+                    "scriptPath": "C:\\Users\\Giovane\\Desktop\\Workspace\\PlazaGames\\LD56Game\\Assets\\Scripts\\OrbitalCameraScript.cs",
+                    "mScriptUuid": 7844278388568669006
+                }
+            },
             {
                 "key": 7600339639355508301,
                 "value": {
@@ -4310,7 +4742,7 @@
                                 "polymorphic_id": 2147483649,
                                 "polymorphic_name": "GuiButton",
                                 "ptr_wrapper": {
-                                    "id": 2147483678,
+                                    "id": 2147483682,
                                     "data": {
                                         "value0": {
                                             "mGuiUuid": 14812098103978736154,
@@ -4351,7 +4783,7 @@
                                 "polymorphic_id": 2147483650,
                                 "polymorphic_name": "GuiRectangle",
                                 "ptr_wrapper": {
-                                    "id": 2147483679,
+                                    "id": 2147483683,
                                     "data": {
                                         "value0": {
                                             "mGuiUuid": 4585321172063421106,
@@ -4389,7 +4821,7 @@
                             "value": {
                                 "polymorphic_id": 1,
                                 "ptr_wrapper": {
-                                    "id": 2147483680,
+                                    "id": 2147483684,
                                     "data": {
                                         "value0": {
                                             "mGuiUuid": 70336930011130087,
@@ -4427,6 +4859,7 @@
                     ]
                 }
             }
-        ]
+        ],
+        "cppScriptComponents": []
     }
 }
